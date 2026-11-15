@@ -5,6 +5,37 @@
 @media(max-width:850px){.layout{grid-template-columns:1fr}.detail{min-height:0}.grid3{grid-template-columns:1fr 1fr}.hero{padding-top:34px;padding-bottom:32px}.section-head{display:block}.section-head p{margin-top:6px}}
 @media(max-width:560px){.hero{padding:28px 18px}.hero h1{font-size:34px}.wrap{padding:18px 13px 48px}.section-head{margin:23px 0 12px}.mapbox{padding:9px}.detail{padding:17px}.detail h3{font-size:25px}.works{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.axis{padding-top:18px}.event{flex-basis:145px}.modal{align-items:flex-end;padding:0}.modalbox{border-radius:16px 16px 0 0;max-height:88dvh;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}.mapnote{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Responsive refinements for phone, tablet and desktop */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0,1fr); }
+  .mapbox, .panel, .card { min-width:0; }
+}
+@media (max-width: 700px) {
+  .hero { padding: 28px 18px 24px; }
+  .hero h1 { font-size: clamp(29px,8vw,42px); }
+  nav { gap: 18px; padding: 10px 14px; }
+  .wrap { padding: 18px 14px 46px; }
+  .section-head { display:block; margin:22px 0 13px; }
+  .section-head p { margin-top:7px; max-width:none; }
+  .layout { grid-template-columns:minmax(0,1fr); gap:12px; }
+  .mapbox { padding:9px; }
+  .map { width:100%; height:auto; }
+  .tabs, .city-chips { flex-wrap:wrap; }
+  .timeline, .timeline-wrap, .axis-wrap { max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .timeline-inner, .axis { min-width:580px; }
+  .works-grid, .method-grid, .ideas-grid, .source-grid { grid-template-columns:minmax(0,1fr); }
+  .modal, .modal-box { width:100%; max-width:100%; max-height:88dvh; overflow:auto; }
+  .modal-overlay { align-items:flex-end; padding:0; }
+  footer { padding:22px 16px; overflow-wrap:anywhere; }
+}
+@media (max-width: 420px) {
+  .hero h1 { font-size:30px; }
+  .mapbox { padding:6px; }
+  .card, .panel { border-radius:10px; }
+  button, .tab, .city-chips a { min-height:40px; }
+}
+
 </style></head><body>
 <header class="hero"><div class="eyebrow">DIGITAL HUMANITIES · HISTORY × LITERATURE × IDEAS</div><h1>鲁迅：行走的地图</h1><div class="sub">从人生迁徙，到文学记忆</div><p class="intro">如果地图只回答“鲁迅去过哪里”，它还没有真正进入文学研究。我们尝试把人生经历发生的地点，与多年后重新写下回忆的时间并置，观察地理空间如何经过时间沉淀，成为文学记忆。</p><div class="team">野旷日暮｜徐晞冉 · 吴一尘 · 郭苜宸 · 郑艺琳 · 慕若萱 · 张馨允</div></header>
 <nav><a href="#map">人生地图</a><a href="#timeline">双重时间</a><a href="#works">《朝花夕拾》</a><a href="#ideas">思想线索</a><a href="#sources">资料来源</a></nav>
